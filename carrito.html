@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesCarrito.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="appCarrito.js" async></script>
+    <title>Tienda de Relojes | </title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="img/logoG.jpg" >
+        </a>
+        <div class="headerBox">
+            <div class="headerBox_1">
+                <h1>Roger Shop</h1>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar..." class="search-input">
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="headerBox_2" >
+                <nav class="list"> 
+                    <div class="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 6l16 0" />
+                            <path d="M4 12l16 0" />
+                            <path d="M4 18l16 0" />
+                        </svg>
+                        <p>Todas las categorías</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M6 9l6 6l6 -6" />
+                        </svg>
+                    </div>
+                    <ul class="dropdown">
+                        <li><a href="#">Disfraces</a></li>
+                        <li><a href="#">Juegos</a></li>
+                        <li><a href="#">Figuras</a></li>
+                    </ul>
+                </nav>
+                <div class="textOptions">
+                    <p><a href="apiTable.html">Api Datatable</a></p>
+                    <p><a href="#">Super Ofertas</a></p>
+                </div>
+            </div>
+        </div>
+        </header>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item .ab1">
+                <span class="titulo-item">Figura Kanroji Mitsuri</span>
+                <img src="img/imageM.png" alt="" class="img-item">
+                <span class="precio-item">$1000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Figura Kamado Tanjiro</span>
+                <img src="img/imageT.png" alt="" class="img-item">
+                <span class="precio-item">$2000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Dragon Stars Super Saiyan Broly</span>
+                <img src="img/imageDBB.png" alt="" class="img-item">
+                <span class="precio-item">$750</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Figura One Piece Roronoa Zoro</span>
+                <img src="img/imageZ.png" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Figura De Shen Long </span>
+                <img src="img/imageSL.png" alt="" class="img-item">
+                <span class="precio-item">$12500</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item"> Cosplay De Satoru Gojo</span>
+                <img src="img/imageCSG.png" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
