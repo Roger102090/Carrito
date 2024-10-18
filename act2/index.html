@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectos Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tres efectos personalizados</h1>
+    </header>
+    <div class="container">
+        <section class="section1">
+            <h2>Efecto 1 <br> Cambio de color</h2>
+            <hr>
+            <div class="slider-container">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                <p>Valor: <span id="value">50</span></p>
+                <div class="muestra" id="colorBox"></div>
+            </div>
+        </section>
+        <section class="section2">
+            <h2>Efecto 2 <br> Ruleta</h2>
+            <div class="anim-container">
+                <p>100</p>
+                <div class="num-container">
+                    <p>75</p>
+                    <div class="ruleta" id="ruleta">🜂</div>
+                    <p>25</p>
+                </div>
+                
+                <p>50</p>
+                <input type="button" value="Iniciar" id="ruletaButton">
+                <p>Número: <span id="numero"></span></p>
+            </div>
+        </section>
+        <section class="section3">
+            <h2>Efecto 3</h2>
+            <div class="contador-container">
+                <p id="contador">0</p>
+                <input type="button" value="Incrementar" id="startButton">
+            </div>
+        </section>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
