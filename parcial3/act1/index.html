@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectos Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Iniciar sesión</h1>
+    </header>
+    <div class="container">
+        <div class="logInContainer">
+            <p>Nombre de usuario</p>
+            <input type="text" id="user">
+            <p>Contraseña</p>
+            <input type="password" id="pass">
+            <input class="button" type="button" value="Iniciar sesión" id="button">
+        </div>
+    </div>
+
+    <!-- Secciones para cada rol -->
+    <div id="adminSection" class="role-section" style="background: #02936F;">Bienvenido, Admin</div>
+    <div id="editorSection" class="role-section" style="background: #C62C6C;">Bienvenido, Editor</div>
+    <div id="viewerSection" class="role-section" style="background: #C37D0C;">Bienvenido, Viewer</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
