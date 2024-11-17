@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectos Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Iniciar sesión</h1>
+    </header>
+    <div class="container">
+
+        <div class="logInContainer">
+            <p>Nombre de usuario o</p>
+            <input type="text" id="user">
+            <p>Contraseña</p>
+            <input type="password" id="pass">
+            <input class="button" type="button" value="Iniciar sesión" id="button">
+            <p class="link" id="recoverButton">¿Olvidaste tu contraseña?</p>
+        </div>
+
+        <div class="changePasswordContainer" id="changePasswordContainer">
+            <h2>Cambiar contraseña</h2>
+            <p>Ingresa tu nueva contraseña</p>
+            <input type="password" id="newPasswordInput">
+            <input class="button" type="button" value="Actualizar contraseña" id="changePasswordButton">
+            <p class="link" id="backToLoginFromChange">Regresar al inicio de sesión</p>
+        </div>
+
+        <div class="recoverContainer" id="recoverContainer" style="display: none;">
+            <h2>Recuperar contraseña</h2>
+            <p>Ingresa tu correo electrónico</p>
+            <input type="email" id="recoverEmail" placeholder="Correo electrónico">
+            <input class="button" type="button" value="Enviar" id="recoverButtonAction">
+            <p class="link" id="backToLogin">Regresar al inicio de sesión</p>
+        </div>
+
+    <!-- Secciones para cada rol -->
+    <div id="adminSection" class="role-section" style="background: #02936F;">Bienvenido, Admin</div>
+    <div id="editorSection" class="role-section" style="background: #C62C6C;">Bienvenido, Editor</div>
+    <div id="viewerSection" class="role-section" style="background: #C37D0C;">Bienvenido, Viewer</div>
+    <script src="app.js"></script>
+</body>
+</html>
